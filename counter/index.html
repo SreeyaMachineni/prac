@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        html, body {
+            min-height: 100vh;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(202, 233, 233);
+        }
+        #header{
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: black;
+        }
+        #count{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .actions{
+            display: flex;
+            flex-direction: row;
+        }
+        .action{
+            border: 3px solid black;
+            background-color: transparent;
+            color: black;
+            padding: 10px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        Counter
+    </div>
+
+    <div id="count"></div>
+    <div class="actions">
+        <button id="inc" class="action">Increase</button>
+        <button id="reset" class="action">Reset</button>
+        <button id="dec" class="action">Decrease</button>
+    </div>
+    
+</body>
+</html>
